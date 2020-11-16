@@ -1,0 +1,140 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #212121;
+}
+.sub-hding {
+  color: #8b959a;
+  font-size: 12px;
+}
+.pl-70 {
+  padding-left: 73px;
+}
+
+.app-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  border: none;
+  box-shadow: 15px 30px 80px rgba(0, 0, 0, 0.10);
+
+}
+
+.theme-btn {
+  background-color: #FE4B66;
+    border-radius: 5px;
+    height: 46px;
+    margin: 20px;
+    color: white;
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    width: 335px;
+    font-size: 12px;
+    border: none;
+}
+.theme-bg-img {
+  max-width: max-content;
+}
+
+.social-btns {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.theme-btn-wrap {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-flow: column;
+  margin-top: 68px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.right-content {
+  margin-top: 5%;
+}
+.main-heading {
+  float: left;
+  font-size: 18px;
+  font-weight: 900;
+}
+.g-login {
+  background-color: #DC4E41;
+  margin-bottom: 15px;
+  
+}
+.fb-login {
+  background-color: #475993;
+}
+
+button {
+  border: none;
+  border-radius: 5px !important;
+  height: 42px;
+  width: 335px;
+  color: white;
+  font-weight: 800;
+  font-size: 12px !important;
+}
+
+input {
+  background: #FAFAFA;
+  height: 42px;
+  border: 1px solid #858585;
+  border-color: #858585;
+  color: #212121;
+  border-radius: 5px;
+}
+.hr {
+  width: 335px;
+  height: 1px;
+  color: lightgray;
+}
+.c-theme {
+  color: #EF4E64;
+}
+.f-12 {
+  font-size: 12px;
+}
+
+.login-mid-heading {
+  font-size: 12px;
+    float: left;
+    padding-left: 50px;
+}
+
+.success-msg {
+  text-align: start;
+}
+.pdiv-err {
+  position: relative;
+}
+.errordiv {
+  position: absolute;
+}
