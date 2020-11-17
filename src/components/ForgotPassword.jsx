@@ -1,126 +1,75 @@
 import React from "react";
 
-export default function ForgotPassword() {
+const inputStyle = {
+  width: "335px",
+  float: "left"
+};
+const buttonStyle = {
+  width: "335px",
+  float: "left"
+};
+const styleFp = {
+  color: "red",
+  paddingLeft: 20
+};
+const errStyle = {
+  fontSize: 12,
+  color: "red",
+  position: "absolute",
+  bottom: "-25px"
+};
+
+export default function resetPassword() {
   return (
     <div className="login-page pl-70">
-      {this.state.showMsg ? (
+      {false ? (
         <div className="success-msg">
           <h3 style={{ textAlign: "left" }}>User Signed up Successfully.</h3>
         </div>
       ) : (
         <div>
           <div className="row">
-            <div className="col-3 f-left">
-              <span className="main-heading">Forget Password?</span>
+            <div className="col-6 f-left">
+              <span className="main-heading">Reset Your Password</span>
+              <p className="sub-hding" style={{ float: "left" }}>Enter new password</p>
             </div>
           </div>
           <div className="row col-10">
             <hr />
           </div>
           <div className="login-form">
-            <form id="login" onSubmit={this.submitForm}>
+            <form id="login" >
               <div className="row">
-                <div className="col-12">
+              <p className="Pass-text"><strong>New Password</strong></p>
+                <div className="col-12 fields-input">
                   <input
                     type="text"
-                    placeholder="Full Name"
-                    name="fname"
-                    onChange={this.validateForm}
-                    style={inputStyle}
-                  />
-                  {this.state.fnameErr !== null && (
-                    <h5 style={errStyle}>{this.state.fnameErr}</h5>
-                  )}
-                </div>
-              </div>
-              <div className="row pdiv-err">
-                <div className="col-12 mt-4 errordiv">
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    name="email"
-                    onChange={this.validateForm}
-                    style={inputStyle}
-                  />
-                  {this.state.emailErr !== null && (
-                    <h5 style={errStyle}>{this.state.emailErr}</h5>
-                  )}
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12 mt-4">
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    name="username"
-                    onChange={this.validateForm}
-                    style={inputStyle}
-                  />
-                  {this.state.usernameErr !== null && (
-                    <h5 style={errStyle}>{this.state.usernameErr}</h5>
-                  )}
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12 mt-4">
-                  <input
-                    type="password"
-                    placeholder="password"
-                    name="password"
-                    onChange={this.validateForm}
-                    style={inputStyle}
-                  />
-                </div>
-              </div>
-              <div className="row pdiv-err">
-                <div className="col-12 mt-4">
-                  <input
-                    type="password"
                     placeholder="Password"
-                    name="repassword"
-                    onChange={this.validateForm}
+                    name="password" 
                     style={inputStyle}
-                  />
-
-                  {this.state.passErr !== null && (
-                    <h5 style={errStyle}>{this.state.passErr}</h5>
-                  )}
+                    />
+                </div>
+                <p className="Pass-text"><strong>Confirm Password</strong></p>
+                <div className="col-12">
+                  <input
+                    type="text"
+                    placeholder="Password"
+                    name="password"
+                    style={inputStyle}
+                    />
                 </div>
               </div>
               <div className="row">
-                <div className="col-12">
-                  <button
-                    type="submit"
-                    className="theme-btn"
-                    style={inputStyle}
-                    disabled={!this.state.isFormValidate}
-                  >
-                    Sign Up
-                  </button>
-                  <br />
-                  {this.state.showError && (
-                    <h6
-                      style={{
-                        color: "red",
-                        marginTop: "15%",
-                        textAlign: "start"
-                      }}
-                    >
-                      Signup is not Done successfully
-                    </h6>
-                  )}
+                  <div className="col-12">
+                    <button
+                      type="submit"
+                      className="theme-btn"
+                      style={buttonStyle} >
+                      Done
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div className="row">
-                <div className="col-12">
-                  <span className="login-mid-heading">
-                    <Link to="#">
-                      <span>Already having account?</span>
-                      <span className="c-theme"> Sign In new account</span>
-                    </Link>
-                  </span>
-                </div>
-              </div>
+              
             </form>
           </div>
         </div>
@@ -128,3 +77,50 @@ export default function ForgotPassword() {
     </div>
   );
 }
+
+// export default function ForgotPassword() {
+//   return (
+//     <div className="login-page pl-70">
+//       {false ? (
+//         <div className="success-msg">
+//           <h3 style={{ textAlign: "left" }}>User Signed up Successfully.</h3>
+//         </div>
+//       ) : (
+//         <div>
+//           <div className="row">
+//             <div className="col-3 f-left">
+//               <span className="main-heading">Forget Password?</span>
+//               <p>Enter Your Registration Email ID</p>
+//             </div>
+//           </div>
+//           <div className="row col-10">
+//             <hr />
+//           </div>
+//           <div className="login-form">
+//             <form id="login" >
+//               <div className="row">
+//                 <div className="col-12 mt-4">
+//                   <input
+//                     type="text"
+//                     placeholder="Email"
+//                     name="fname" />
+//                 </div>
+//               </div>
+             
+
+//               <div className="row">
+//                   <div className="col-12">
+//                     <button
+//                       type="submit"
+//                       className="theme-btn" >
+//                       Send
+//                     </button>
+//                   </div>
+//                 </div>
+              
+//             </form>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );

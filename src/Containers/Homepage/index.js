@@ -3,6 +3,7 @@ import bioLogo from "../../assets/bioLogo.png";
 import Login from "../../components/Login";
 import Welcome from "../../components/Welcome";
 import Signup from "../../components/Signup";
+import ForgotPassword from "../../components/ForgotPassword";
 
 class Homepage extends React.PureComponent {
   constructor(props) {
@@ -32,7 +33,7 @@ class Homepage extends React.PureComponent {
                   }
                 />
               )}
-              {this.state.isLogin && <Login />}
+              {this.state.isLogin && <ForgotPassword />}
               {this.state.isSignUp && <Signup />}
             </div>
           </div>

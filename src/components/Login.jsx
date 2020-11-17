@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 import appPath from "../utils/API/path";
 import axios from "axios";
 
@@ -92,7 +92,9 @@ export default class Login extends React.PureComponent {
                 <div className="row">
                   <div className="offset-lg-5 col-lg-5">
                     <span className="f-12" style={styleFp}>
-                      Forgot Password?
+                    {/* <NavLink className="navbar-item" activeClassName="is-active" to="/ForgotPassword">
+                    Forgot Password?
+            </NavLink> */}
                     </span>
                   </div>
                 </div>
